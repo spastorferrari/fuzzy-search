@@ -1,14 +1,14 @@
 from setuptools import setup, find_packages
 
 setup(
-    name='fuzzy_search',
-    version='0.1.0',
+    name='fuzzysearch',
+    version='0.1.1',
     author='Sebas Pastor',
     author_email='sebas@cubyc.com',
     description='Fuzzy string matching functions using thefuzz library.',
     long_description=open('README.md').read(),
     long_description_content_type='text/markdown',
-    url='https://github.com/spastorferrari/fuzzy_search',
+    url='https://github.com/spastorferrari/fuzzysearch',
     packages=find_packages(),
     install_requires=[
         'pandas',

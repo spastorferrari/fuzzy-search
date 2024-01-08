@@ -1,7 +1,6 @@
 from thefuzz import fuzz
 from thefuzz import process
 
-
 def fuzzy(df, column, min_index=80, max_index=100):
     """Simple ratio function for string matching using fuzzy search. Good for single strings.
 
