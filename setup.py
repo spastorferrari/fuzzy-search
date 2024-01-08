@@ -13,6 +13,7 @@ setup(
     install_requires=[
         'pandas',
         'thefuzz'
+        'fuzzysearch'
     ],
     classifiers=[
         'Development Status :: 3 - Alpha',
