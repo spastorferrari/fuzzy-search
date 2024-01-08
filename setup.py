@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='fuzzysearch',
-    version='0.1.1',
+    version='0.1.2',
     author='Sebas Pastor',
     author_email='sebas@cubyc.com',
     description='Fuzzy string matching functions using thefuzz library.',
