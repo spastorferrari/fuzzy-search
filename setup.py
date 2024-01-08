@@ -8,7 +8,7 @@ setup(
     description='Fuzzy string matching functions using thefuzz library.',
     long_description=open('README.md').read(),
     long_description_content_type='text/markdown',
-    url='https://github.com/spastorferrari/fuzzy-search',
+    url='https://github.com/spastorferrari/fuzzy_search',
     packages=find_packages(),
     install_requires=[
         'pandas',
