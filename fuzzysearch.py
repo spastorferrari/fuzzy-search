@@ -1,7 +1,7 @@
 from thefuzz import fuzz
 from thefuzz import process
 
-def fuzzy(df, column, min_index=80, max_index=100):
+def fuzzy(df, column, min_index=80, max_index=100, verbose=False):
     """Simple ratio function for string matching using fuzzy search. Good for single strings.
 
     Args:
@@ -19,7 +19,7 @@ def fuzzy(df, column, min_index=80, max_index=100):
         col1 = i
         match_id = fuzz.ratio(col0, col1)
 
-        if match_id >= min_index and match_id <= max_index:
+        if match_id >= min_index and match_id <= max_index and verbose:
             print(f"{col_name}0: {col0},\n{col_name}1: {col1},\nmatch: {match_id}%\n")
 
             id.append(col0)
@@ -31,7 +31,7 @@ def fuzzy(df, column, min_index=80, max_index=100):
     return set(id)
 
 
-def fuzzypm(df, column, min_index=80, max_index=100):
+def fuzzypm(df, column, min_index=80, max_index=100, verbose=False):
     """Partial ratio function for string matching using fuzzy search. Good for multiple substrings.
 
     Args:
@@ -49,7 +49,7 @@ def fuzzypm(df, column, min_index=80, max_index=100):
         col1 = i
         match_id = fuzz.partial_ratio(col0, col1)
 
-        if match_id >= min_index and match_id <= max_index:
+        if match_id >= min_index and match_id <= max_index and verbose:
             print(f"{col_name}0: {col0},\n{col_name}1: {col1},\nmatch: {match_id}%\n")
 
             id.append(col0)
